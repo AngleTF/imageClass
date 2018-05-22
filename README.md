@@ -1,4 +1,4 @@
-##**如果你要对图片进行压缩处理你可以按照如下步骤**
+## 图片压缩
 
 ``` php
 //实例化image(如果是验证码操作不需要传入图片路径)
@@ -14,7 +14,7 @@ echo $img->getImageName();  //e24bc2d37d9c34e231b3843d97cfd8142606111a.JPG
 ```php
 $img->compress(800,500,3)->show();
 ```
-##马赛克
+## 马赛克
 ```php
 $img->mask('mask test' , 1)->show();
 //第二个参数是type类型 1表示文字马赛克 2表示图片马赛克(需要用户提供图片)
@@ -24,7 +24,7 @@ save用法
 $img->mask('mask test' , 1)->save('./');
 ```
 
-##验证码
+## 验证码
 ```php
 $img->authCode()->show();
 ```
